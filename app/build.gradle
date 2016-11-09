@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:15'
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "com.example.thanh.canhbaonguyhiem"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "2048M"
+        jumboMode = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/okhttp-2.5.0.jar')
+    compile files('libs/android-google-maps-api13.jar')
+    compile files('libs/json.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.google.android.gms:play-services:9.8.0'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.firebase:firebase-database:9.8.0'
+}
+apply plugin: 'com.google.gms.google-services'
+android { sourceSets { debug { res.srcDirs = ['src/debug/res', 'src/debug/res/audio'] } } }
+android {
+    sourceSets { debug { resources.srcDirs = ['src/debug/resources', 'src/debug/resources/'] } }
+}
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+    useLibrary 'org.apache.http.legacy'
+    //useLibrary  'com.google.android.maps'
+}

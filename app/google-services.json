@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "915715374693",
+    "firebase_url": "https://myspaces-d62dc.firebaseio.com",
+    "project_id": "myspaces-d62dc",
+    "storage_bucket": "myspaces-d62dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915715374693:android:e4f03dc36d471edb",
+        "android_client_info": {
+          "package_name": "com.example.thanh.canhbaonguyhiem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915715374693-oqiq3kvsi4ognil0s9o6ffjcladffabu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbz6uGz0uUa7300MS4U5W6qZEVlMvWOBY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

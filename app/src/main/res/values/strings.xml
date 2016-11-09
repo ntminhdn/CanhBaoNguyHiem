@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CanhBaoNguyHiem</string>
+    <string name="title_activity_maps">Nguy Co TNGT</string>
+
+    <string name="title_activity_welcome_screen">Welcome_screen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
